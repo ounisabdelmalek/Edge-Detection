@@ -28,6 +28,8 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
 
 
+
+        
         MainWindow.setStyleSheet(u"QWidget{\n"
 "\n"
 "\n"
@@ -73,6 +75,8 @@ class Ui_MainWindow(object):
 "    background-color: #ffffff;\n"
 "    border: 1px solid #ccc;\n"
 "    border-radius: 8px;\n"
+    "  width: 400px;\n"
+    
 "    padding: 6px 12px;\n"
 "    font-size: 14px;\n"
 "}\n"
@@ -135,6 +139,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.image.sizePolicy().hasHeightForWidth())
+        
         self.image.setSizePolicy(sizePolicy)
         self.image.setScaledContents(False)
         self.image.setAlignment(Qt.AlignmentFlag.AlignCenter)
@@ -175,9 +180,9 @@ class Ui_MainWindow(object):
         sizePolicy3 = QSizePolicy(QSizePolicy.Policy.Maximum, QSizePolicy.Policy.Maximum)
         sizePolicy3.setHorizontalStretch(0)
         sizePolicy3.setVerticalStretch(0)
-        sizePolicy3.setHeightForWidth(self.filters.sizePolicy().hasHeightForWidth())
+        sizePolicy3.setHeightForWidth(self.filters.sizePolicy().hasWidthForHeight())
         self.filters.setSizePolicy(sizePolicy3)
-        self.filters.setMaximumSize(QSize(70, 16777215))
+        self.filters.setMaximumSize(QSize(95, 16777215))
         self.filters.setSizeAdjustPolicy(QComboBox.SizeAdjustPolicy.AdjustToContents)
 
 

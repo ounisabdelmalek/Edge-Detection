@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(800, 600)
 
-        self.adjust_combo_width(self.filters)
+
         MainWindow.setStyleSheet(u"QWidget{\n"
 "\n"
 "\n"

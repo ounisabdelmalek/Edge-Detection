@@ -1,4 +1,3 @@
-Hello my name is Ounis Abdelmalek
 In this mini-project I create gui that give you an abilty to do image processing specifically (edge detection)
 ![image](https://github.com/user-attachments/assets/7e93e219-efc3-42aa-8cd3-9b710b82c6d9)
 I covred just 3 filters canny, soble and laplacine you can add more filters with put them in filters class 
